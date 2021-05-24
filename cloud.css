@@ -1,0 +1,294 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    padding: 20px;
+    
+    
+}
+/* style the header */
+.header {
+    padding: 50px 100px;
+    text-align: center;
+    background-image: url(img/ylwpk.jpg);
+    border-radius: 20px;
+  
+}
+/* styling the header heading */
+ h1 {
+font-size: 80px;
+
+}
+.header p{
+    font-size: 50px;
+   
+}
+/* styling navigation bar*/
+.nav{
+    overflow: hidden;
+    background-color: black;
+    border-radius: 10px;
+
+}
+/* styling navigation lings*/
+.nav a{
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+    font-size:20px ;
+    padding: 25px;
+}
+/* Change color on hover */ 
+.nav a:hover{
+    background-color:white;
+    color: black;
+   
+}
+.nav a:focus {
+    background-color: white;
+    color: black;
+    font-size:22px ;
+    
+}
+
+section{
+    background-color: white;
+    
+}
+.intro h2 {
+    text-align: center;
+    font-size: 60px;
+    padding: 50px;
+    margin: 100px;
+    border-radius: 20px;
+}
+
+.intro p {
+    font-size: 30px;
+    padding: 50px;
+    margin: 50px;
+
+}
+.content h2 {
+    
+    font-size: 80px;
+    background-color: goldenrod;
+    padding: 50px ;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 400px) {
+    .nav a{
+        float: none;
+        width: 100%;
+    }
+}
+
+.form {
+    background-image: url("img/whitepink.jpg ");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-position: center;
+    position:relative ;
+    padding: 20%;
+    margin: 20;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    text-align: justify;
+    cursor: pointer;
+}
+
+.intro h2:hover {
+    color: goldenrod;
+    background-color: black;
+
+}
+.thought {
+    background-image: url(img/pen.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    padding: 300px;
+    
+    
+ 
+}
+.thought textarea{
+    background-color: none;
+    float: left top;
+    padding: 20px;
+    box-sizing: content-box;
+    
+}
+
+.next {
+    background-image: url(img/nb1.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    padding: 300px;
+    box-sizing: border-box;
+    
+    
+
+}
+
+
+.next #email{
+    text-align:center;
+    font-size: 30px;
+    color: rgb(14, 14, 14);
+    display:block;
+    border-radius:24px;
+    outline:none;
+    padding:10px;
+    border:3px solid #7a60cf;
+    background-color: inherit;
+
+}
+
+.next #password{
+    text-align:center;
+    font-size: 30px;
+    display:block;
+    color: rgb(14, 14, 14);
+    border-radius:24px;
+    outline:none;
+    padding:10px;
+    border:3px solid #7a60cf;
+    background-color: inherit;
+    
+}
+.next #submit{
+    text-align:center;
+    font-size: 30px;
+    display:block;
+    border-radius:24px;
+    outline:none;
+    padding:10px;
+    color: rgb(14, 14, 14);
+    background-blend-mode: lighten;
+    border:3px solid #7a60cf;
+    background-color: inherit;
+   
+
+}
+.next #email:focus{
+	width:420px;
+	border-color: #ffc400ec;
+    cursor: pointer;
+}
+
+.next #password:focus{
+	width:420px;
+	border-color: #ffc400ec;
+    cursor: pointer;
+}
+
+.next #submit:focus {
+	border-color: #ffc400ec;
+    width:400px;
+    cursor: pointer;
+}
+
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+.joinme{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.joinme input{
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid pink;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.joinme input:focus{
+    border-color: rgb(49, 121, 216);
+}
+.joinme #btn1{
+    border-color: rgb(169, 212, 103);
+
+}
+.joinme #btn1:focus{
+    background-color:rgb(169, 212, 103);
+    ;
+}
